@@ -40,16 +40,13 @@ const App = () => {
       <h1>Nákupní seznam</h1>
 
       <ul>
-      {
-        list.map(
-          item => (
-            <li className={ item.bought ? 'koupeno' : ''}>
-              <h3>{item.product}</h3>
-              <p>koupit: {item.amount}</p>
-            </li>
-          )
-        )
-      }
+      {list.map(item =>
+        <ShoppingItem
+          product={item.product}
+          amount={item.amount}
+          bought={item.bought}
+        />
+      )}
       </ul>
 
       {/* <ul>
