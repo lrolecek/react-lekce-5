@@ -24,6 +24,15 @@ import './style.css';
 // const namesEl = names.map(name => <p>{ name }</p>);
 
 
+const list = [
+  { product: 'mrkev', amount: '3ks', bought: false },
+  { product: 'paprika', amount: '2ks', bought: true },
+  { product: 'cibule', amount: '2ks', bought: false },
+  { product: 'čínské zelí', amount: '1ks', bought: true },
+  { product: 'arašídy', amount: '250g', bought: false },
+  { product: 'sojová omáčka', amount: '1ks', bought: false },
+];
+
 const App = () => {
   return (
     <>
