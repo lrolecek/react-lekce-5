@@ -8,8 +8,7 @@ html {
   font-family: 'Open Sans', sans-serif;
 }
 
-
-.koupeno {
-  text-decoration: line-through;
-  color: silver;
+ul {
+  margin: 0;
+  padding: 0;
 }

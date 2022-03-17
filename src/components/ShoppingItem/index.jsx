@@ -1,4 +1,5 @@
 import React from 'react';
+import './style.css';
 
 const ShoppingItem = ({product, amount, bought}) => {
 	return (
