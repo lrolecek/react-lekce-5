@@ -2,6 +2,7 @@ import React from 'react';
 import { render } from 'react-dom';
 import './style.css';
 
+import ShoppingItem from './components/ShoppingItem';
 
 // const jmeno = 'Jirka';
 
@@ -36,10 +37,20 @@ const list = [
 const App = () => {
   return (
     <>
+      <h1>Nákupní seznam</h1>
 
-
-
-
+      <ul>
+      {
+        list.map(
+          item => (
+            <li className={ item.bought ? 'koupeno' : ''}>
+              <h3>{item.product}</h3>
+              <p>koupit: {item.amount}</p>
+            </li>
+          )
+        )
+      }
+      </ul>
 
       {/* <ul>
         { names.map(name => <li>{ name }</li>) }
